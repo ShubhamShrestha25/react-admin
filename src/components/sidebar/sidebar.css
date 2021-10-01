@@ -1,8 +1,8 @@
 .sidebar {
   flex: 1;
   height: calc(100vh - 50px);
-  position: sticky;
   background-color: rgb(251, 251, 255);
+  position: sticky;
   top: 50px;
 }
 
@@ -11,10 +11,13 @@
   color: #555;
 }
 
+.sidebar-menu {
+  margin-bottom: 10px;
+}
+
 .sidebar-title {
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(187, 186, 186);
-  padding-top: 10px;
 }
 
 .sidebar-list {
@@ -27,6 +30,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 .sidebar-list-item.active,
