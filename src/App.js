@@ -3,6 +3,7 @@ import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/home/Home";
+import NewProduct from "./pages/newproduct/NewProduct";
 import NewUser from "./pages/newuser/NewUser";
 import Product from "./pages/product/Product";
 import ProductList from "./pages/productlist/ProductList";
@@ -28,14 +29,14 @@ function App() {
           <Route path="/newUser">
             <NewUser />
           </Route>
-          <Route to="/products">
+          <Route path="/products">
             <ProductList />
           </Route>
           <Route path="/product/:productId">
             <Product />
           </Route>
           <Route path="/newproduct">
-            <NewUser />
+            <NewProduct />
           </Route>
         </Switch>
       </div>
