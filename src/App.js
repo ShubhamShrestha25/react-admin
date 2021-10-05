@@ -4,6 +4,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/home/Home";
 import NewUser from "./pages/newuser/NewUser";
+import ProductList from "./pages/productlist/ProductList";
 import User from "./pages/user/User";
 import UserList from "./pages/userlist/UserList";
 
@@ -24,6 +25,15 @@ function App() {
             <User />
           </Route>
           <Route path="/newUser">
+            <NewUser />
+          </Route>
+          <Route path="/products">
+            <ProductList />
+          </Route>
+          <Route path="/product/:productId">
+            <User />
+          </Route>
+          <Route path="/newproduct">
             <NewUser />
           </Route>
         </Switch>
