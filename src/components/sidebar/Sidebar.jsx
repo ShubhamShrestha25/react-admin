@@ -48,7 +48,7 @@ const Sidebar = () => {
                 Users
               </li>
             </Link>
-            <Link to="products" className="link">
+            <Link to="/products" className="link">
               <li className="sidebar-list-item">
                 <Storefront className="sidebar-icon" />
                 Products
